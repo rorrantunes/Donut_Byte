@@ -2,57 +2,68 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hacenos Ping</title>
-  <link rel="shortcut icon" href="../photos/logo.png" type="image/x-icon" />
+
+  <!-- BOOTSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="../style/style.css" />
 </head>
-
 <body>
-<!-- TÍTULO + NAVEGACIÓN -->
-  <header>
-    <h4>¡Hacenos Ping!</h4>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Donut Byte</a></li>
-            <li><a href="../pages/tienda.html">Donuts & Data</a></li>
-            <li><a href="../pages/nosotros.html">Equipo Byte</a></li>
-            <li><a href="../pages/pago.html">Inserta Moneda</a></li>
-        </ul>
-    </nav>
-</header>
+  
+  <!-- TÍTULO + NAVEGACIÓN -->
+  <nav class="navbar bg-dark">
+    <div class="container justify-content-center">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../index.html">Donut Byte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../pages/tienda.html">Donuts & Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../pages/nosotros.html">Equipo Byte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="../pages/pago.html">Inserta Moneda</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-
-  <main>
-       <!-- FORMULARIO DE CONTACTO -->
-       <section>
-        <h2>¿Querés hablar con la chef de código?</h2>
-        <form action="#" method="post">
-          <label class="texto-contacto" for="nombre">Nombre y Apellido:</label>
-          <input type="text" id="nombre" name="nombre" required />
-          <br />
-  
-          <label class="texto-contacto" for="correo">Correo:</label>
-          <input type="email" id="correo" name="correo" required />
-          <br />
-  
-          <label class="texto-contacto" for="mensaje">Dejanos tu mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-          <br />
-  
-          <button type="submit" id="btn-enviar">Enviar ping</button>
-        </form>
-      </section>
+  <main class="container my-4">
+    <h1 class="text-center">Hacenos Ping</h1>
+    <p class="texto-contacto text-center">
+      Tenés alguna duda? Querés ser parte de la aventura? Dejanos tu mensaje!
+    </p>
+    
+    <!-- FORMULARIO DE CONTACTO -->
+    <form class="mx-auto" style="max-width: 400px;">
+      <div class="mb-3">
+        <label for="nombre" class="form-label texto-contacto">Nombre y Apellido:</label>
+        <input type="text" id="nombre" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label texto-contacto">Correo:</label>
+        <input type="email" id="correo" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label texto-contacto">Dejanos tu mensaje:</label>
+        <textarea id="mensaje" rows="4" class="form-control" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning w-100">Enviar ping</button>
+    </form>
 
     <!-- UBICACIÓN TIENDA FÍSICA (FICTICIA) -->
-    <section>
-    <h3>Nivel secreto: nuestra tienda fuera de la nube</h3>
+    <section class="text-center my-4">
+      <h3>Nivel secreto: nuestra tienda fuera de la nube</h3>
       <h6>¡Encontranos en nuestra tienda de donas pixeladas!</h6>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.652432262444!2d-58.42801550000001!3d-34.5876601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5b077e3fc1d%3A0x39790aa8269595ba!2sThe%20Donuts%20Market!5e0!3m2!1ses-419!2sar!4v1747642706078!5m2!1ses-419!2sar"
-        width="600"
-        height="450"
-        style="border:0;"
+        width="100%"
+        height="300"
+        style="border:0; max-width:600px; margin:auto; display:block;"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
@@ -60,27 +71,10 @@
     </section>
   </main>
 
-  <footer>
-      <!-- PIE DE PÁGINA CON RRSS (LOS USUARIOS SON FICTICIOS), LOGO, CRÉDITOS -->
-    <div class="footer-content">
-      <div class="social-icons">
-        <a href="https://www.instagram.com/" target="_blank">
-          <img src="../Ig_logo.PNG" alt="Logo Instagram" />
-        </a>
-        <a href="https://www.tiktok.com/" target="_blank">
-          <img src="../tiktok_logo.PNG" alt="Logo TikTok" />
-        </a>
-        <a href="https://wa.me/541112345678" target="_blank">
-          <img src="../Logo_wtps.PNG" alt="Logo WhatsApp" />
-        </a>
-      </div>
-
-      <div>
-        <img src="../photos/logo.png" alt="Donut Byte Logo" class="logo-footer"/>
-      </div>
-
-      <p class="footer-text">© 2025 Donut Byte. Diseñado por Rorra 💗 </p>
-    </div>
+  <!-- PIE DE PÁGINA CON RRSS (LOS USUARIOS SON FICTICIOS), LOGO, CRÉDITOS -->
+  <footer class="bg-dark text-light py-3 text-center">
+    <p>© 2025 Donut Byte. Diseñado por Rorra 💗</p>
   </footer>
+
 </body>
 </html>

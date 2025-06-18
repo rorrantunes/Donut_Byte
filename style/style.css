@@ -5,22 +5,22 @@
 body {
   background-color: #0a0a23; 
   color: white; 
-  font-family: 'Roboto'; 
+  font-family: 'Roboto', sans-serif; 
   line-height: 1.6;
   padding: 20px; /* Agrega espacio a los costados */
 }
 
 /* ----------------- TIPOGRAFIAS ESPECIFICAS -------------------- */
 h1, h2, h3, h4, h5, h6, nav a, button, .titulo-dona, .equipo-nombre, .texto-contacto {
-  font-family: 'Press Start 2P';
+  font-family: 'Press Start 2P', cursive;
   text-transform: uppercase;
 }
 
 h1 {
   color: #ff4dd2; 
-  font-size: 24px;  /* Tamaño de letra */
-  text-align: center; /* Texto centrado horizontalmente */
-  margin-bottom: 20px; /* Espacio debajo del texto */
+  font-size: 24px;  
+  text-align: center; 
+  margin-bottom: 20px; 
 }
 
 h2 {
@@ -74,12 +74,12 @@ nav a {
 }
 
 nav ul {
-  list-style: none;    /* Quita los puntos */
+  list-style: none;   
   padding: 0;         
   margin: 0;           
-  display: flex;       /* Si quieres que se muestre en fila */
+  display: flex;      
   justify-content: center;
-  gap: 1rem;           /* Espacio entre los enlaces */
+  gap: 1rem;          
 }
 
 /* Efecto hover para enlaces del nav */
@@ -92,37 +92,60 @@ nav a:hover {
 /* ----------- LOGO DEL INICIO ------------- */
 #logo-img {
   display: block;
-  margin: auto; /* Centra horizontalmente y da espacio abajo */
+  margin: auto; 
   width: 150px;
-  height: auto; /* Altura automática para mantener proporción */
+  height: auto; 
 }
 
 /* Logo principal gira 360 grados en hover */
 #logo-img:hover {
   transform: rotate(360deg);
-  transition: transform 0.8s ease; /* Suave y rápido */
+  transition: transform 0.8s ease; 
 }
 
 /* ----------------- BOTONES ------------------ */
-button {
-  background-color: #ffea00; 
-  color: #0a0a23;
-  border: none;
-  padding: 15px 12px;
-  font-size: 12px;
+button, button.btn-warning {
+  background-color: #ffea00 !important; 
+  color: #0a0a23 !important;
+  border: none !important;
+  padding: 15px 12px !important;
+  font-size: 12px !important;
   cursor: pointer;
-  margin-top: 10px;  /* Espacio arriba del bloque */
+  margin-top: 10px;  
   display: inline-block;
   text-align: center;
-  border-radius: 0;
+  border-radius: 0 !important;
+  font-family: 'Press Start 2P', cursive !important;
+  transition: all 0.3s ease !important;
 }
 
 /* Efecto hover para los botones */
-button:hover {
-  background-color: #ff4dd2; 
-  color: #0a0a23; 
-  transform: scale(1.05); /* Ligeramente más grande */
-  transition: all 0.3s ease; /* Suaviza la transición */
+button:hover, button.btn-warning:hover {
+  background-color: #ff4dd2 !important; 
+  color: #0a0a23 !important; 
+  transform: scale(1.05) !important; 
+}
+
+/* --------------- FORMULARIOS ------------------ */
+input.form-control, textarea.form-control {
+  padding: 8px !important;
+  font-size: 12px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: #000000 !important; 
+  color: #ffffff !important; 
+  font-family: 'Roboto', sans-serif !important;
+}
+
+/* --------------- FORMULARIO sin Bootstrap clases (por si no usas form-control) ------------------ */
+input, textarea {
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+  border-radius: 0;
+  background-color: #000000; 
+  color: #ffffff; 
+  font-family: 'Roboto', sans-serif;
 }
 
 /* --------------- PAGINAS DE TIENDA Y NOSOTROS ------------------ */
@@ -132,8 +155,8 @@ button:hover {
   font-size: 15px;
   text-align: center; 
   margin-bottom: 10px; 
-  display: block; /* Ocupa todo el ancho disponible */
-  width: 100%; /
+  display: block; 
+  width: 100%;
 }
 
 .galeria {
@@ -151,14 +174,14 @@ button:hover {
 
 #equipo-nosotros article {
   text-align: center;     
-  max-width: 350px;        /* Ancho máximo de cada bloque */
+  max-width: 350px;        
 }
 
 #equipo-nosotros img {
   width: 100px;           
   height: auto;            
   display: block;         
-  margin: 0 auto 10px;     /* Centra la imagen y agrega espacio abajo */
+  margin: 0 auto 10px;    
 }
 
 #equipo-nosotros p {
@@ -168,12 +191,11 @@ button:hover {
 }
 
 /* ------------------ PAGO ---------------------- */
-/* alcancia cerdo pixel */
 #img-pig {
   width: 200px;           
   height: auto;          
   display: block;         
-  margin: 0 auto;   /* Centra horizontalmente la imagen */
+  margin: 0 auto;   
 }
 
 /* efecto rebote cerdo */
@@ -189,22 +211,6 @@ button:hover {
   100% { transform: translateY(0); }
 } 
 
-/* --------------- FORMULARIOS ------------------ */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; 
-}
-
-input, textarea {
-  padding: 8px;
-  font-size: 12px;
-  border: none;
-  border-radius: 0;
-  background-color: #000000; /* Color de las barras de escribir de los formularios */
-  color: #ffffff; 
-}
-
 /* Estilo de las tarjetas (donas y avatares) */
 .tarjeta-arcade {
   background-color: #1a1a40; 
@@ -213,11 +219,11 @@ input, textarea {
   margin: 10px auto;
   max-width: 240px;
   text-align: center;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
-/* Titulos de las tajertas de las donas y avatares */
+/* Titulos de las tarjetas de las donas y avatares */
 .tarjeta-arcade h3 {
   font-size: 12px;
   color: #ff7bff;
@@ -244,10 +250,9 @@ input, textarea {
 .tarjeta-arcade:hover {
   border-color: #ff4dd2; 
   box-shadow: 0 0 15px #ff4dd2; 
-  transform: translateY(-5px); /* Se eleva levemente */
+  transform: translateY(-5px); 
   transition: all 0.3s ease;
 }
-
 
 /* Donas giran 360 grados en hover */
 .tarjeta-arcade img:hover {
@@ -263,15 +268,15 @@ footer {
 
 .footer-content {
   display: flex; 
-  justify-content: space-between; /* Deja espacio entre los elementos */
-  align-items: center; /* Alinea todo al centro verticalmente */
+  justify-content: space-between; 
+  align-items: center; 
   max-width: 1200px; 
   margin: 0 auto; 
   padding: 0 20px; 
 }
 
 .social-icons {
-  display: flex; /* Organiza los iconos de rrss en fila */
+  display: flex; 
   gap: 15px; 
 }
 
@@ -293,43 +298,36 @@ footer {
 
 /* Efecto hover para los íconos sociales en el footer */
 .social-icons a img:hover {
-  transform: scale(1.5) rotate(5deg); /* Crece y gira un poco */
+  transform: scale(1.5) rotate(5deg); 
   transition: all 0.3s ease;
 }
 
 /* ------------ DISEÑO RESPONSIVE ------------- */
 @media (max-width: 600px) {
 
-  /* Navegación: los ítems en columna */
   nav ul {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
 
-  /* Galería de donas: para q las tarjetas bajen a nueva fila si es que no entran */
   .galeria {
-    flex-wrap: wrap;
     justify-content: center;
   }
 
-  /* Sección equipo: disposición vertical */
   #equipo-nosotros {
     flex-direction: column;
     align-items: center;
   }
 
-  /* Tarjetas de donas y equipo: ancho + adaptable */
   .tarjeta-arcade {
-    max-width: 90%; /* para ocupar casi todo el ancho dispo */
+    max-width: 90%; 
   }
 
-  /* Imagen de logo: + pequeña en celu */
   #logo-img {
     width: 100px;
   }
 
-  /* Footer: íconos y texto centrados */
   .footer-content {
     flex-direction: column;
     gap: 10px;
