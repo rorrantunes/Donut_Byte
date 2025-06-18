@@ -31,10 +31,10 @@ El sitio incluye las siguientes secciones:
 
 ## ⚠️ Estado del Proyecto
 
-:construction: **En desarrollo / fase de aprendizaje.**  
-Bootstrap fue incorporado parcialmente mientras se continúa su estudio.
+:construction: **En desarrollo / fase de aprendizaje**  
+Bootstrap fue incorporado parcialmente mientras se continúa su estudio
 
-## 🤔 ¿Por qué este proyecto?
+## 🤔 Por qué este proyecto?
 
 Este sitio fue creado como parte de una entrega académica para practicar:
 
