@@ -32,7 +32,6 @@ El sitio incluye las siguientes secciones:
 ## ⚠️ Estado del Proyecto
 
 :construction: **En desarrollo / fase de aprendizaje**  
-Bootstrap fue incorporado parcialmente mientras se continúa su estudio
 
 ## 🤔 Por qué este proyecto?
 
@@ -55,8 +54,7 @@ Este sitio fue creado como parte de una entrega académica para practicar:
 
 ## 📬 Contacto
 
-Desarrollado con 💗 por Rorra 
-Si deseas sugerencias o quieres aportar ideas, no dudes en crear un **Issue** o un **Pull Request**
+Desarrollado con 💗 por Rorra, si deseas sugerencias o quieres aportar ideas, no dudes en crear un **Issue** o un **Pull Request**
 
 ---
 
