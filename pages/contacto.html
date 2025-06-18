@@ -2,9 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hacenos Ping</title>
   <link rel="shortcut icon" href="../photos/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../style/style.css" />
   <!-- Bootstrap CSS CDN -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -12,144 +13,87 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoJvLCz5pIvo9E2tZlYtQZjJEaew3uwsLv2QMY/eM0Bo6pG"
     crossorigin="anonymous"
   />
-  <link rel="stylesheet" href="../style/style.css" />
 </head>
 
 <body>
-  <!-- HEADER + NAVBAR -->
+<!-- TÍTULO + NAVEGACIÓN -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../photos/logo.png" alt="Donut Byte Logo" width="40" height="40" class="d-inline-block align-text-top" />
-          Donut Byte
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/tienda.html">Donuts & Data</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/nosotros.html">Equipo Byte</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/pago.html">Inserta Moneda</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <h4>¡Hacenos Ping!</h4>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Donut Byte</a></li>
+            <li><a href="../pages/tienda.html">Donuts & Data</a></li>
+            <li><a href="../pages/nosotros.html">Equipo Byte</a></li>
+            <li><a href="../pages/pago.html">Inserta Moneda</a></li>
+        </ul>
     </nav>
   </header>
 
-  <main class="container my-5">
+  <main>
     <!-- FORMULARIO DE CONTACTO -->
-    <section class="mb-5">
-      <h2 class="mb-4">¿Querés hablar con la chef de código?</h2>
-      <form action="#" method="post" class="needs-validation" novalidate>
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre y Apellido:</label>
-          <input type="text" class="form-control" id="nombre" name="nombre" required />
-          <div class="invalid-feedback">
-            Por favor, ingresa tu nombre y apellido.
-          </div>
-        </div>
+    <section>
+      <h2>¿Querés hablar con la chef de código?</h2>
+      <form action="#" method="post">
+        <label class="texto-contacto" for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <br />
 
-        <div class="mb-3">
-          <label for="correo" class="form-label">Correo:</label>
-          <input type="email" class="form-control" id="correo" name="correo" required />
-          <div class="invalid-feedback">
-            Por favor, ingresa un correo válido.
-          </div>
-        </div>
+        <label class="texto-contacto" for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required />
+        <br />
 
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Dejanos tu mensaje:</label>
-          <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
-          <div class="invalid-feedback">
-            No te olvides de escribir tu mensaje.
-          </div>
-        </div>
+        <label class="texto-contacto" for="mensaje">Dejanos tu mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <br />
 
-        <button type="submit" class="btn btn-primary" id="btn-enviar">Enviar ping</button>
+        <button type="submit" id="btn-enviar">Enviar ping</button>
       </form>
     </section>
 
-    <!-- UBICACIÓN TIENDA FÍSICA (FICTICIA)-->
+    <!-- UBICACIÓN TIENDA FÍSICA (FICTICIA) -->
     <section>
       <h3>Nivel secreto: nuestra tienda fuera de la nube</h3>
-      <h6 class="text-muted mb-3">¡Encontranos en nuestra tienda de donas pixeladas!</h6>
+      <h6>¡Encontranos en nuestra tienda de donas pixeladas!</h6>
 
-      <div class="ratio ratio-16x9 shadow rounded">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.652432262444!2d-58.42801550000001!3d-34.5876601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5b077e3fc1d%3A0x39790aa8269595ba!2sThe%20Donuts%20Market!5e0!3m2!1ses-419!2sar!4v1747642706078!5m2!1ses-419!2sar"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Ubicación tienda Donut Byte"
-        ></iframe>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.652432262444!2d-58.42801550000001!3d-34.5876601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5b077e3fc1d%3A0x39790aa8269595ba!2sThe%20Donuts%20Market!5e0!3m2!1ses-419!2sar!4v1747642706078!5m2!1ses-419!2sar"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-light text-center text-lg-start py-4 shadow-sm">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <div class="mb-3 mb-md-0">
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="mx-2">
-          <img src="../Ig_logo.PNG" alt="Logo Instagram" width="30" />
+  <footer>
+      <!-- PIE DE PÁGINA CON RRSS (LOS USUARIOS SON FICTICIOS), LOGO, CRÉDITOS -->
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="../Ig_logo.PNG" alt="Logo Instagram" />
         </a>
-        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="mx-2">
-          <img src="../tiktok_logo.PNG" alt="Logo TikTok" width="30" />
+        <a href="https://www.tiktok.com/" target="_blank">
+          <img src="../tiktok_logo.PNG" alt="Logo TikTok" />
         </a>
-        <a href="https://wa.me/541112345678" target="_blank" rel="noopener noreferrer" class="mx-2">
-          <img src="../Logo_wtps.PNG" alt="Logo WhatsApp" width="30" />
+        <a href="https://wa.me/541112345678" target="_blank">
+          <img src="../Logo_wtps.PNG" alt="Logo WhatsApp" />
         </a>
       </div>
 
       <div>
-        <img src="../photos/logo.png" alt="Donut Byte Logo" class="logo-footer" width="50" />
+        <img src="../photos/logo.png" alt="Donut Byte Logo" class="logo-footer"/>
       </div>
 
-      <p class="mb-0 text-muted">© 2025 Donut Byte. Diseñado por Rorra 💗</p>
+      <p class="footer-text">© 2025 Donut Byte. Diseñado por Rorra 💗 </p>
     </div>
   </footer>
-
-  <!-- Bootstrap JS Bundle (con Popper) -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+7/tQ5aSk5QnmPc+Vf2N5W9WvZtbt"
-    crossorigin="anonymous"
-  ></script>
-
-  <!-- Validación Bootstrap JS para el formulario -->
-  <script>
-    (() => {
-      'use strict'
-      const forms = document.querySelectorAll('.needs-validation')
-      Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-          form.classList.add('was-validated')
-        }, false)
-      })
-    })()
-  </script>
 </body>
 </html>
