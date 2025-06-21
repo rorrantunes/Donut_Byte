@@ -6,40 +6,94 @@
   <title>Hacenos Ping</title>
   <link rel="shortcut icon" href="../photos/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="../style/style.css" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap CSS CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoJvLCz5pIvo9E2tZlYtQZjJEaew3uwsLv2QMY/eM0Bo6pG"
+    crossorigin="anonymous"
+  />
 </head>
+
 <body>
-  <!-- HEADER con menú hamburguesa -->
-  <header class="bg-dark py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <h4 class="text-white m-0">¡Hacenos Ping!</h4>
-
-      <!-- Checkbox hack -->
-      <input type="checkbox" id="menu-toggle" class="d-none">
-      <label for="menu-toggle" class="menu-icon d-md-none text-white fs-2">&#9776;</label>
-
-      <!-- Menú de navegación -->
-      <nav class="menu d-md-flex justify-content-end" id="navbarNav">
-        <ul class="navbar-nav flex-column flex-md-row gap-3 text-center m-0 p-0">
-          <li class="nav-item"><a class="nav-link text-white" href="../index.html">Donut Byte</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="../pages/tienda.html">Donuts & Data</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="../pages/nosotros.html">Equipo Byte</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="../pages/pago.html">Inserta Moneda</a></li>
+<!-- TÍTULO + NAVEGACIÓN -->
+  <header>
+    <h4>¡Hacenos Ping!</h4>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Donut Byte</a></li>
+            <li><a href="../pages/tienda.html">Donuts & Data</a></li>
+            <li><a href="../pages/nosotros.html">Equipo Byte</a></li>
+            <li><a href="../pages/pago.html">Inserta Moneda</a></li>
         </ul>
-      </nav>
-    </div>
+    </nav>
   </header>
 
-  <!-- MAIN simple -->
-  <main class="container mt-4">
-    <h1>Bienvenido a Donut Byte</h1>
-    <p>Este es un ejemplo de menú hamburguesa sin JavaScript, usando Bootstrap + CSS puro.</p>
+  <main>
+    <!-- FORMULARIO DE CONTACTO -->
+    <section>
+      <h2>¿Querés hablar con la chef de código?</h2>
+      <form action="#" method="post">
+        <label class="texto-contacto" for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <br />
+
+        <label class="texto-contacto" for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required />
+        <br />
+
+        <label class="texto-contacto" for="mensaje">Dejanos tu mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <br />
+
+        <button type="submit" id="btn-enviar">Enviar ping</button>
+      </form>
+    </section>
+
+    <!-- UBICACIÓN TIENDA FÍSICA (FICTICIA) -->
+    <section>
+      <h3>Nivel secreto: nuestra tienda fuera de la nube</h3>
+      <h6>¡Encontranos en nuestra tienda de donas pixeladas!</h6>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.652432262444!2d-58.42801550000001!3d-34.5876601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5b077e3fc1d%3A0x39790aa8269595ba!2sThe%20Donuts%20Market!5e0!3m2!1ses-419!2sar!4v1747642706078!5m2!1ses-419!2sar"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER simple -->
-  <footer class="bg-dark text-white text-center py-3 mt-5">
-    <p>© 2025 Donut Byte. Diseñado por Rorra 💗</p>
+  <footer>
+      <!-- PIE DE PÁGINA CON RRSS (LOS USUARIOS SON FICTICIOS), LOGO, CRÉDITOS -->
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="../Ig_logo.PNG" alt="Logo Instagram" />
+        </a>
+        <a href="https://www.tiktok.com/" target="_blank">
+          <img src="../tiktok_logo.PNG" alt="Logo TikTok" />
+        </a>
+        <a href="https://wa.me/541112345678" target="_blank">
+          <img src="../Logo_wtps.PNG" alt="Logo WhatsApp" />
+        </a>
+      </div>
+
+      <div>
+        <img src="../photos/logo.png" alt="Donut Byte Logo" class="logo-footer"/>
+      </div>
+
+      <p class="footer-text">© 2025 Donut Byte. Diseñado por Rorra 💗 </p>
+    </div>
   </footer>
 </body>
 </html>
