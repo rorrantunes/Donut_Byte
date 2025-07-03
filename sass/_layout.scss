@@ -1,0 +1,97 @@
+footer {
+  background-color: $color-footer-bg;
+  padding: 20px 0;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+
+    a img {
+      width: 110px;
+      @include transition;
+
+      &:hover {
+        transform: scale(1.5) rotate(5deg);
+      }
+    }
+  }
+
+  .logo-footer {
+    width: 60px;
+  }
+
+  .footer-text {
+    color: $color-footer-text;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input, textarea {
+    padding: 8px;
+    font-size: 12px;
+    border: none;
+    border-radius: 0;
+    background-color: #000000;
+    color: $color-texto;
+  }
+}
+
+#equipo-nosotros {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+
+  article {
+    text-align: center;
+    max-width: 350px;
+
+    img {
+      width: 100px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    p {
+      font-size: 15px;
+      color: $color-texto;
+    }
+  }
+}
+
+.descripcion-donas {
+  color: $color-texto;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+#img-pig {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  @include bounce;
+}

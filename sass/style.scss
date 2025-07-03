@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'components';
+@import 'layout';
+@import 'responsive';
+
+body {
+  background-color: hotpink;
+}

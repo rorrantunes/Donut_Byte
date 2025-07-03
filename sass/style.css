@@ -1,3 +1,306 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+body {
+  background-color: #0a0a23;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
 
+h1, h2, h3, h4, h5, h6,
+nav a, button,
+.titulo-dona, .equipo-nombre, .texto-contacto {
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h6,
+#equipo-nosotros p, .tarjeta-arcade p {
+  text-align: center;
+}
+
+h1 {
+  color: #ff4dd2;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #39ff14;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #f67700;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #fff200;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+h5, .texto-contacto {
+  color: #ffffff;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+h6 {
+  color: #7295ff;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+nav a {
+  color: #ff4dd2;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+nav a:hover, nav a:focus {
+  color: #39ff14;
+  text-shadow: 0 0 5px #39ff14;
+  outline: none;
+}
+
+button {
+  background-color: #fff200;
+  color: #0a0a23;
+  border: none;
+  padding: 1em 0.8em;
+  font-size: 0.9em;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover, button:focus {
+  background-color: #ff4dd2;
+  color: #0a0a23;
+  transform: scale(1.05);
+  outline: none;
+}
+button:focus {
+  outline: 2px solid #39ff14;
+  outline-offset: 3px;
+}
+
+#logo-img {
+  display: block;
+  margin: auto;
+  width: 150px;
+  transition: transform 0.8s ease;
+}
+#logo-img:hover {
+  transform: rotate(360deg);
+}
+
+.tarjeta-arcade {
+  background-color: #1a1a40;
+  border: 4px solid #fff200;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 240px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.tarjeta-arcade h3 {
+  font-size: 12px;
+  color: #ff7bff;
+  margin-bottom: 10px;
+}
+.tarjeta-arcade p {
+  font-size: 13px;
+  color: #ffffff;
+}
+.tarjeta-arcade img {
+  width: 100px;
+  display: block;
+  margin: 0 auto 10px;
+  transition: transform 0.8s ease;
+}
+.tarjeta-arcade img:hover {
+  transform: rotate(360deg);
+}
+.tarjeta-arcade:hover {
+  border-color: #ff4dd2;
+  box-shadow: 0 0 15px #ff4dd2;
+  transform: translateY(-5px);
+}
+
+footer {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+footer .social-icons {
+  display: flex;
+  gap: 15px;
+}
+footer .social-icons a img {
+  width: 110px;
+  transition: all 0.3s ease;
+}
+footer .social-icons a img:hover {
+  transform: scale(1.5) rotate(5deg);
+}
+footer .logo-footer {
+  width: 60px;
+}
+footer .footer-text {
+  color: #ffb7ea;
+  font-size: 15px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input, form textarea {
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+  border-radius: 0;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#equipo-nosotros {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+#equipo-nosotros article {
+  text-align: center;
+  max-width: 350px;
+}
+#equipo-nosotros article img {
+  width: 100px;
+  display: block;
+  margin: 0 auto 10px;
+}
+#equipo-nosotros article p {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.descripcion-donas {
+  color: #ffffff;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+#img-pig {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  animation: bounce 0.6s ease;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #equipo-nosotros {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjeta-arcade {
+    max-width: 90%;
+  }
+  #logo-img {
+    width: 100px;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    text-align: right;
+    width: 100%;
+  }
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin-top: 10px;
+    border: 2px solid #fff200;
+  }
+  #menu-toggle:checked + .menu-icon + .menu ul {
+    display: flex;
+  }
+}
+body {
+  background-color: hotpink;
+}
 
 /*# sourceMappingURL=style.css.map */

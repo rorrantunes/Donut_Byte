@@ -1,0 +1,33 @@
+body {
+  background-color: $color-bg;
+  color: $color-texto;
+  font-family: $font-base;
+  line-height: 1.6;
+  padding: $padding-general;
+}
+
+h1, h2, h3, h4, h5, h6,
+nav a, button,
+.titulo-dona, .equipo-nombre, .texto-contacto {
+  font-family: $font-pixel;
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h6,
+#equipo-nosotros p, .tarjeta-arcade p {
+  text-align: center;
+}
+
+h1 { color: $color-acento1; font-size: 24px; margin-bottom: 20px; }
+h2 { color: $color-acento2; font-size: 18px; margin-bottom: 10px; }
+h3 { color: $color-acento3; font-size: 15px; margin-bottom: 10px; }
+h4 { color: $color-acento4; font-size: 25px; margin-bottom: 10px; }
+h5, .texto-contacto { color: $color-texto; font-size: 12px; text-align: left; margin-bottom: 10px; }
+h6 { color: $color-acento5; font-size: 12px; margin-bottom: 10px; }
+
+p {
+  color: $color-texto;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
