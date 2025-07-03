@@ -341,31 +341,3 @@ footer {
   }
 
 }
-
-/* --------- MEJORAS VISUALES POR FEEDBACK ----------- */
-.seccion {
-  padding: 40px 20px;
-  margin-bottom: 40px;
-}
-
-.titulo-seccion {
-  font-size: 22px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ff00ff;
-  padding-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #39ff14;
-}
-
-.bg-oscuro {
-  background-color: #1a1a1a;
-  color: #ffffff;
-}
-
-.divisor {
-  border-top: 2px dashed #00ffff;
-  margin: 40px 0;
-  opacity: 0.3;
-}
