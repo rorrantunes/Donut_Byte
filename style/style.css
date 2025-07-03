@@ -370,12 +370,12 @@ footer {
   opacity: 0.3;
 }
 
-/* Oculta el checkbox por defecto */
+/* Ocultar checkbox */
 #menu-toggle {
   display: none;
 }
 
-/* Estilo del ícono hamburguesa */
+/* Ícono hamburguesa */
 .menu-icon {
   display: none;
   font-size: 30px;
@@ -385,13 +385,23 @@ footer {
   font-family: 'Press Start 2P';
 }
 
-/* Menú oculto en mobile por defecto */
+/* Menú por defecto (desktop) */
 .menu ul {
+  list-style: none;
   display: flex;
   justify-content: center;
   gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
+.menu a {
+  text-decoration: none;
+  color: #ff4dd2;
+  padding: 10px;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -401,10 +411,9 @@ footer {
   .menu ul {
     display: none;
     flex-direction: column;
-    align-items: center;
     background-color: #1a1a1a;
-    margin-top: 10px;
     padding: 20px;
+    margin-top: 10px;
     border: 2px solid #fff200;
   }
 
