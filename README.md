@@ -3,6 +3,8 @@
 Bienvenido/a al repositorio oficial de **Donut Byte**!  
 Este proyecto consiste en un sitio web con estética arcade/pixel art que simula la tienda ficticia de donas "Donut Byte", combinando diseño retro con elementos modernos de desarrollo web
 
+![Animación Donut Byte](photos/donutbyte.gif.gif)
+
 ## 🚀 Tecnologías Utilizadas
 
 - **HTML5**
