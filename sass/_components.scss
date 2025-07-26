@@ -99,3 +99,17 @@ button {
     transform: translateY(-5px);
   }
 }
+
+.gif-section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gif-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 100vh;
+  object-fit: cover;
+}
