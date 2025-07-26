@@ -431,3 +431,19 @@ footer {
     display: flex;
   }
 }
+
+/*Gif en el inicio*/
+.gif-section {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.gif-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 100vh;
+  object-fit: cover;
+}
